@@ -12,10 +12,10 @@ class CategoryList extends Component {
   }
 }
 
-function mapStateTopProps(state) {
+function mapStateToProps(state) {
   return {
     currentCategory: state.changeCategoryReducer,
   };
 }
 
-export default connect(mapStateTopProps)(CategoryList);
+export default connect(mapStateToProps)(CategoryList);
